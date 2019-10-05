@@ -1,0 +1,8 @@
+Amazon logo, search by XPATH "//a[@class='a-link-nav-icon']"
+Continue button, search by XPATH, "//input[@id='continue']"
+Need help link, search by XPATH,"//span[@class='a-expander-prompt']"
+Forgot your password link, search by XPATH,"//a[@id='auth-fpp-link-bottom']"
+Other issues with Sign-In link, search by XPATH,"//h1[@class='a-spacing-small']"
+Create your Amazon account button, search by ID, "createAccountSubmit"
+*Conditions of use link, search by XPATH,"//span[@class='auth-footer-seperator']"
+*Privacy Notice link, search by XPATH, "//a[@class='a-link-normal' and @target='_blank']"
