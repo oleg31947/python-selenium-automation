@@ -10,6 +10,6 @@ def click_cart_icon(context):
     context.find_element(By.CSS_SELECTOR, "a#nav-cart" )
     context.send_keys('Cancel order')
 
-@then('Verify Cancel Order page is opened')
-def verify_cancel_order_open(context):
+@then('Verify Cart page open #Enter feature name here')
+def verify_card_page_open(context):
     context.driver.find_element(By.By.CSS_SELECTOR, "div#sc-active-cart")
