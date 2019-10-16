@@ -5,11 +5,11 @@ from selenium.webdriver.common.by import By
 def open_amazon(context):
     context.driver.get("https://www.amazon.com/")
 
-@when('Click on the cart icon')
-def click_cart_icon(context):
-    context.find_element(By.CSS_SELECTOR, "a#nav-cart" )
-    context.send_keys('Cancel order')
+@when('Click on the card icon')
+def search_cart_icon(context):
+    context.driver.find_element(By.CSS_SELECTOR, "a span#nav-cart-count"). click()
 
-@then('Verify Cart page open #Enter feature name here')
-def verify_card_page_open(context):
-    context.driver.find_element(By.By.CSS_SELECTOR, "div#sc-active-cart")
+@then('Verifies that Your Shopping Cart is empty')
+def verify_card_page_empty(context):
+    context.driver.find_element(By.CSS_SELECTOR, "h1.sc-empty-cart-header")
+    assert "Your Shopping Cart is empty"
