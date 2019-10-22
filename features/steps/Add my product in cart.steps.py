@@ -13,7 +13,7 @@ def search_product(context, product):
     context.driver.find_element(*SEARCH_ICON).click()
 @when('Open the first product search result')
 def click_first_result(context):
-    context.driver.find_elemet(*PRODUCT_RESULTS).click()
+    context.driver.find_element(*PRODUCT_RESULTS).click()
 
 
 
