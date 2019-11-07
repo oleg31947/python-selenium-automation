@@ -5,3 +5,9 @@ Feature: User verify product colors.
   Scenario: Verify product colors.
     Given Open B07BKD8JCQ Amazon page
     Then  Verify product colors
+    
+
+
+    
+    
+    
