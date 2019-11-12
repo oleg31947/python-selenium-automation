@@ -39,6 +39,7 @@ def switch_to_new_window(context):
 def header_is_correct(context, expected_header):
     actual_header = context.driver.find_element(*TODAYS_DEALS_HEADER).text
     assert actual_header == expected_header, f'Expected {expected_header}, but got {actual_header}'
+    #context.app.search_results_page.verify_result_shown(expected_header)
 
 @when('Put {product} into a cart')
 def click_add_cart_button(context, product):

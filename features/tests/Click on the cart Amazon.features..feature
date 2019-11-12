@@ -2,7 +2,7 @@
 Feature: Test for clicks on the cart icon
   # Enter feature description here
 
-  Scenario: Ucer click on"a#nav-cart" the cart icon
+  Scenario: User click on"a#nav-cart" the cart icon
     Given Open Amazon page
-    When Click on the card icon
-    Then Verifies that Your Shopping Cart is empty
+    When Click on cart icon
+    Then Verify Your Shopping Cart is empty. text present
