@@ -12,6 +12,7 @@ def search_product(context, product):
     #search_field.send_keys(product)
     #context.driver.find_element(*SEARCH_ICON).click()
     context.app.main_page.search_for_keyword(product)
+
 @when('Open the first product search result')
 def click_first_result(context):
     context.driver.find_element(*PRODUCT_RESULTS).click()

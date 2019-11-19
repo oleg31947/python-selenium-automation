@@ -1,9 +1,6 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 
-@given('Open Amazon Help')
-def open_amazon(context):
-    context.driver.get("https://www.amazon.com/gp/help/customer/display.html")
 
 @when('Input {serch_word} into search field.')
 def open_cancel_order_page(context, search_word):
