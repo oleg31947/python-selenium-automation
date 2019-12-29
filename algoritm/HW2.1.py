@@ -10,7 +10,7 @@ def main(my_greeting):
 # remove spaces
 my_gift = "  Wellcom to     Portland    "
 new_my_gift = ''.join(my_gift).split()
-concatenate = ''.join([str(elem) for elem in new_my_gift])
+concatenate = ' '.join(new_my_gift)
 
 
 #def unite_gift(*args):
@@ -29,5 +29,5 @@ def unite_gift(s):
 if __name__ == "__main__":
     print(main(my_greeting="Oleg_Morozov is the best men"))
     print(new_my_gift)
-    print(unite_gift(new_my_gift))
+    #print(unite_gift(new_my_gift))
     print(concatenate)

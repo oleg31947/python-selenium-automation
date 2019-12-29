@@ -16,6 +16,8 @@ def maxx(c):
     max(c)
     print(max(c))
 
+
+
 if __name__ == "__main__":
 
     a = [23, 204, 106]
