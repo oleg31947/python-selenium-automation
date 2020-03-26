@@ -22,3 +22,4 @@ class Product(Page):
         self.wait_for_element_appear(*self.FASHION_TOOLTIP)
 
 
+
